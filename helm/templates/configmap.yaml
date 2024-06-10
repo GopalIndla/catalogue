@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.appName }}-cm 
+data:
+  CART_ENDPOINT: "cart-svc"
+  DB_HOST: "roboshop-dev-mysql.c93whrwsdihk.us-east-1.rds.amazonaws.com"

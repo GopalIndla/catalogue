@@ -1,0 +1,18 @@
+appName: catalogue 
+replicaCount: 1
+maxUnavailable: 50
+appVersion: 305
+containerPort: 8080
+image: 355449129696.dkr.ecr.us-east-1.amazonaws.com/catalogue
+tag: 302
+
+cpuLimit: "400Mi"
+memLimit: "500m"
+
+cpuReq: "250m"
+memReq: "100Mi"
+
+minReplicas: 1
+maxReplicas: 5
+
+averageUtilization: 90
